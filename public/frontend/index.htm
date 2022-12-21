@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/banner/logo.jpg" sizes="32x32">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responive.css">
+
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="main">
+    <div id="header">
+        <ul id="nav">
+            <li class="">
+                <a href="">
+                    <img src="./assets/img/banner/logo.jpg" alt="" class="img__about-logo">
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="navbar-item-link" href="./index.htm">Trang Chủ</a>
+            </li>
+            <li class="list-group-item">
+                <a class="navbar-item-link" href="#about__me">Thực Đơn</a>
+            </li>
+            <li class="list-group-item">
+                <a class="navbar-item-link" href="#resume__me">Đang Khuyến Mãi</a>
+            </li>
+            <li class="list-group-item">
+                <a class="navbar-item-link" href="#photo__me">Món Mới </a>
+            </li>
+            <li class="list-group-item">
+                <a class="navbar-item-link" href="#blog__me">Về Chúng Tôi </a>
+            </li>
+            <li class="list-group-item">
+                <button type="button" class="navbar-item-link btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(144, 143, 143);"></i>
+                </button>
+            </li>
+            <li class="">
+                <a class="" href="#blog__me">
+                    <button type="submit" class="btn btn-danger">Đăng nhập</button>
+                </a>
+            </li>
+        </ul>
+        <li class="nav__responive" id="modal__nav-bar">
+            <i class="fa-solid fa-bars"></i>
+        </li>
+    </div>
+
+    <!-- Modal cart-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đơn Của Bạn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên món</th>
+                                    <th>Giá</th>
+                                    <th>SL</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart-items-info">
+                                    <td class="cart-item-img">
+                                        <img src="./assets/img/COFFEE/cf1.png" alt="">
+                                    </td>
+                                    <td class="cart-item-name">Bún Đậu Mẹt Thập Cẩm (Lớn) - 1 Phần</td>
+                                    <td class="cart-item-price">300.000 đ</td>
+                                    <td class="cart-item-qty">
+                                        <input type="number" value="1" min="1">
+                                    </td>
+                                    <td class="cart-item-close ">
+                                        <i class="fa-regular fa-circle-xmark "></i>
+                                    </td>
+                                </tr>
+                                <tr class="cart-items-info">
+                                    <td class="cart-item-img">
+                                        <img src="./assets/img/COFFEE/cf1.png" alt="">
+                                    </td>
+                                    <td class="cart-item-name">Nước trà vải (L)</td>
+                                    <td class="cart-item-price">30.000 đ</td>
+                                    <td class="cart-item-qty">
+                                        <input type="number" value="1" min="1">
+                                    </td>
+                                    <td class="cart-item-close ">
+                                        <i class="fa-regular fa-circle-xmark "></i>
+                                    </td>
+                                </tr>
+                                <tr class="cart-items-info">
+                                    <td class="cart-item-img">
+                                        <img src="./assets/img/COFFEE/cf1.png" alt="">
+                                    </td>
+                                    <td class="cart-item-name">Nước trà vải (L)</td>
+                                    <td class="cart-item-price">30.000 đ</td>
+                                    <td class="cart-item-qty">
+                                        <input type="number" value="1" min="1">
+                                    </td>
+                                    <td class="cart-item-close ">
+                                        <i class="fa-regular fa-circle-xmark "></i>
+                                    </td>
+                                </tr>
+                                <tr class="cart-items-info">
+                                    <td class="cart-item-img">
+                                        <img src="./assets/img/COFFEE/cf1.png" alt="">
+                                    </td>
+                                    <td class="cart-item-name">Nước trà vải (L)</td>
+                                    <td class="cart-item-price">30.000 đ</td>
+                                    <td class="cart-item-qty">
+                                        <input type="number" value="1" min="1">
+                                    </td>
+                                    <td class="cart-item-close ">
+                                        <i class="fa-regular fa-circle-xmark "></i>
+                                    </td>
+                                </tr>
+                                <tr class="cart-total">
+                                    <td colspan="2" class="cart-total-title">TỔNG:</td>
+                                    <td colspan="3" class="cart-total-price"> 330.000 đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 ">
+                    <button type="button " class="btn btn-secondary ">Cập nhật</button>
+                    <button type="button " class="btn btn-danger ">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal cart -->
+
+    <div id="carouselExampleCaptions " class="carousel slide " data-bs-ride="carousel " style="margin-top: 90px; ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img src="./assets/img/banner/banner1.jpg " class="d-block w-100 " alt="... ">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1 style="color: #000; font-weight: 800; font-size: 2.8rem; ">ĐẶT MÓN NÀO </h1>
+                    <h1 style="color: red; font-weight: 800; font-size: 2.8rem; ">CŨNG FREESHIP</h1>
+                    <form class="d-flex " style="justify-content: center; ">
+                        <input class="form-control " type="search " style="border-radius: 12px; width: 50%; padding: 10px;" placeholder="Tìm món ăn, đồ uống yêu thích nào " aria-label="Search ">
+                        <button class="btn btn-outline-drak" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container " style="margin-top: 20px; ">
+        <div class="slider ">
+            <div class="slider-box ">
+                <div class="slider-js owl-carousel owl-theme ">
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider1.jpg " alt=" ">
+                    </div>
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider2.jpg " alt=" ">
+                    </div>
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider3.jpg " alt=" ">
+                    </div>
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider4.jpg " alt=" ">
+                    </div>
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider5.jpg " alt=" ">
+                    </div>
+                    <div class="item ">
+                        <img width="465px " height="220px " style="object-fit: cover;border-radius: 8px; " src="./assets/img/banner/Slider6.jpg " alt=" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thể loại -->
+    <div class="container ">
+        <div class="the-loai-title ">
+            <h4>CHỌN THEO THỂ LOẠI</h4>
+        </div>
+        <div class="row ">
+            <div class="col-md-2">
+                <a href="./coffee.htm " class="the-loai-link ">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/Theloai1.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Cafe</h5>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href=" " class="the-loai-link">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/Theloai2.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Trà sữa</h5>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href=" " class="the-loai-link ">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/theloai3.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Ăn trưa</h5>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href=" " class="the-loai-link ">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/theloai4.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Trà trái cây</h5>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href=" " class="the-loai-link ">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/theloai5.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Sinh tố/Nước ép</h5>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href=" " class="the-loai-link ">
+                    <div class="the-loai-img ">
+                        <img src="./assets/img/TheLoai/theloai6.jpg " alt=" ">
+                    </div>
+                    <h5 class="the-loai-ten ">Bánh mỳ Việt</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khám phá món mới -->
+    <div class="container ">
+        <div class="row g-2 g-lg-3 ">
+            <div class="kham-pha-thuc-don-title ">
+                <h4>KHÁM PHÁ THỰC ĐƠN</h4>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/COFFEE/cf1.png " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Trà Lipton</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi6.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Kem Dừa Siam 1 <br><br></h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi7.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Chả Cá Chiên - 1 Kg <br><br></h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi8.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Trà Sen Vàng Macchiato</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi9.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Lục Trà Machiato</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi10.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Thập Cẩm 2 Người Ăn Đầy Đủ</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/moimoi11.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Sinh Tố Đu Đủ, Dưa Hấu - 1 Ly</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card ">
+                    <a href=" " class="kham-pha-thuc-don-link ">
+                        <img src="./assets/img/Monmoi/monmoi12.jpg " style="height: 280px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Nước Ép Cà Rốt Thơm - 1 Ly</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="kham-pha-thuc-don-footer ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <a href=" " class="kham-pha-thuc-don-all ">XEM TẤT CẢ 
+                        <i class="fa-solid fa-angle-right "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đang khuyến mãi -->
+    <div class="container ">
+        <div class="row g-2 g-lg-3 ">
+            <div class="khuyen-mai-title ">
+                <h4>ĐANG KHUYẾN MÃI</h4>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km1.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Sữa Chua Nếp Cẩm D2D</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                    <i class="fa-solid fa-percent "></i>  
+                                <span name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km2.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">BÚN ĐẬU MẸT THÙY LINH</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                <i class="fa-solid fa-percent "></i>  
+                            <span name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km3.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Đậm Coffee</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                <i class="fa-solid fa-percent "></i>  
+                            <span name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km4.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">
+                                Bánh Tráng Chị Ba - Tôn thất Thuyết</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                <i class="fa-solid fa-percent "></i>  
+                            <span name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km5.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Bún cay thái</h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                <i class="fa-solid fa-percent "></i>  
+                                <span name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href=" " class="khuyen-mai-link ">
+                    <div class="card ">
+                        <img src="./assets/img/khuyemai/km6.jpg " style="height: 230px; object-fit: cover; " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">
+                                Sinh Tố Nước Ép Điền Gia <br><br></h5>
+                            <p class="card-text " name="price ">20.000 đ</p>
+                            <button type="submit " href="# " class="btn btn-light ">Chọn mua</button>
+                            <span class="khuyen-mai-percent ">
+                                <i class="fa-solid fa-percent "></i>  
+                                <span  name=" ">  Giảm 10.000 đ</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="khuyen-mai-footer ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <a href=" " class="khuyen-mai-all ">XEM TẤT CẢ 
+                        <i class="fa-solid fa-angle-right "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thành viên -->
+    <div class="container ">
+        <div class="thanh-vien ">
+            <h4>TRỞ THÀNH CHIẾN BINH LOSHIP NGAY HÔM NAY!</h4>
+        </div>
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="thanh-vien-img ">
+                    <div class="linear-bg "></div>
+                    <div class="thanh-vien-content ">
+                        <h3>Trở thành chiến binh Loship - nhanh và miễn phí</h3>
+                        <p>Dễ dàng trở thành chiến binh của Loship</p>
+                        <p>Loship - ứng dụng giao trà sữa trong vòng 1 giờ - với xe máy của chính mình và điện thoại Android hoặc iPhone.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-danger btn-banner " href="http://chienbinhloship.com " target="_blank ">Đăng ký ngay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container " style="margin-top: 80px; ">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="download-app-sms ">
+                        <h4>NHẬP SỐ ĐIỆN THOẠI ĐỂ NHẬN LINK TẢI LOSHIP</h4>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <span class="input-group-text " id="basic-addon1 ">
+                            <img src="https://tea-3.lozi.vn/v1/statics/resized/country-flag-vn-1570251233 " style="height: 28px; margin: -4px 8px -4px 0; " alt=" ">+84
+                        </span>
+                        <input type="text " class="form-control " placeholder="Nhập số điện thoại... " aria-label="Username " aria-describedby="basic-addon1 ">
+                        <span class="input-group-text ">
+                            <button type="submit " class="btn btn-danger ">Gửi</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="download-app ">
+                        <h4>TẢI ỨNG DỤNG LOSHIP NGAY TRÊN</h4>
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <a href=" ">
+                                    <img src="https://loship.vn/dist/images/app-ios.png " alt=" ">
+                                </a>
+                            </div>
+                            <div class="col-md-6 ">
+                                <a href=" ">
+                                    <img src="https://loship.vn/dist/images/app-android.png " alt=" ">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <section class="footer ">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item ">
+                                <img src="https://loship.vn/dist/images/logo.png " height="20px " alt=" ">
+                            </li>
+                            <li class="list-group-item ">Công ty Cổ Phần Lozi Việt Nam</li>
+                            <li class="list-group-item ">Tòa nhà Lữ Gia, Tầng 4 - 70 Lữ Gia - F.15 - Q11 - Tp. Hồ Chí Minh</li>
+                            <li class="list-group-item ">Tổng đài giải đáp thắc mắc về Loship: hotroloship@lozi.vn</li>
+                            <li class="list-group-item ">Hotline: 1900.638.058</li>
+                            <li class="list-group-item ">Liên hệ hợp tác / tài trợ: uyennhu@lozi.vn</li>
+                            <li class="list-group-item ">Liên hệ truyền thông: press@loship.vn</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item ">
+                                <b>Dịch vụ</b>
+                            </li>
+                            <li class="list-group-item ">LOSHIP - giao đồ ăn</li>
+                            <li class="list-group-item ">LOMART - đi chợ</li>
+                            <li class="list-group-item ">LOZAT - giặt ủi</li>
+                            <li class="list-group-item ">LOPOINT - tích điểm</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item ">
+                                <b>Hợp tác</b>
+                            </li>
+                            <li class="list-group-item ">Mở cửa hàng trên LOSHIP</li>
+                            <li class="list-group-item ">Mở cửa hàng trên LOMART</li>
+                            <li class="list-group-item ">Mở cửa hàng trên LOZAT</li>
+                            <li class="list-group-item ">Mở cửa hàng trên LOMED</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item ">
+                                <b>Loship khu vực</b>
+                            </li>
+                            <li class="list-group-item ">Loship - Đà Nẵng</li>
+                            <li class="list-group-item ">Loship - Cần Thơ</li>
+                            <li class="list-group-item ">Loship - Hải Phòng</li>
+                            <li class="list-group-item ">Loship - Quảng Ninh</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item ">
+                                <b>Media</b>
+                            </li>
+                            <li class="list-group-item ">Giới thiệu đúng về Loship</li>
+                            <li class="list-group-item ">Tải logo Loship cho Media</li>
+                            <li class="list-group-item ">Loship introduction</li>
+                            <li class="list-group-item ">
+                                <b>Tải Ứng dụng</b>
+                            </li>
+                            <li class="list-group-item ">
+                                <img src="https://loship.vn/dist/efa05a64610abd7e544f.png " alt=" ">
+                            </li>
+                            <li class="list-group-item ">
+                                <img src="https://loship.vn/dist/fd1776b2414bc1a90fcc.png " alt=" ">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js " integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk " crossorigin="anonymous ">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js " integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK " crossorigin="anonymous ">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js "></script>
+    <script src="./assets/js/main.js "></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js "></script>
+
+</body>
+
+</html>

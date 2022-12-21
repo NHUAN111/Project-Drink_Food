@@ -1,0 +1,94 @@
+@media (min-width: 1024px) {
+    .nav-menu-icon {
+        display: none!important;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Nav */
+    .nav__responive {
+        display: flex;
+    }
+    #nav {
+        display: none;
+    }
+    #nav li a {
+        display: none;
+    }
+    .carousel-caption {
+        top: -10%;
+    }
+    .caption-title>.caption-title-top {
+        font-size: 1.8rem;
+    }
+    .caption-title>.caption-title-bottom {
+        font-size: 1.8rem;
+    }
+    .thanh-vien-img {
+        padding: 0;
+    }
+    .thanh-vien-content {
+        padding: 0px 24px;
+    }
+    .input-search-food {
+        width: 60%;
+    }
+    .banner-shop {
+        height: 145px;
+        object-fit: cover;
+    }
+    .img-food {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width: 740px) {
+    /* Nav */
+    .nav__responive {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    #nav {
+        display: none;
+    }
+    #nav li a {
+        display: none;
+    }
+    .nav-menu {
+        width: 200px;
+    }
+    .carousel-caption {
+        top: -10%;
+    }
+    .caption-title {
+        margin-top: -10px;
+    }
+    .input-search-food {
+        width: 85%;
+    }
+    .caption-title>.caption-title-top {
+        font-size: 1.2rem;
+    }
+    .caption-title>.caption-title-bottom {
+        font-size: 1.2rem;
+    }
+    .box-register-members {
+        display: none;
+    }
+    .banner-shop {
+        height: 100px;
+        object-fit: cover;
+    }
+    .cart-item-price {
+        width: 100%;
+    }
+    .hidden-imgs {
+        display: none;
+    }
+    .img-food {
+        display: block;
+        margin: auto;
+    }
+}

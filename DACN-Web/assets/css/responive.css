@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Nav */
+    .nav__responive {
+        display: flex;
+    }
+    #nav {
+        flex: 1;
+        padding: 0 40px;
+    }
+    #nav li a {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    /* Nav */
+    .nav__responive {
+        display: flex;
+        align-items: center;
+    }
+    #nav {
+        flex: 1;
+        padding: 0 40px;
+    }
+    #nav li a {
+        display: none;
+    }
+}

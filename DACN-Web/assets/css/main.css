@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main {
+    background-color: #f6f6f6;
+}
+
+#header {
+    display: flex;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #f6f6f6;
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); */
+}
+
+.sticky {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
+    background-color: #b22830;
+}
+
+.sticky-color {
+    color: #1a202c;
+}
+
+#nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    /* line-height: 46px; */
+    padding: 0 26px;
+    display: block;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#nav .list-group-item a:hover {
+    color: #000;
+    transition: all .3s;
+}
+
+#nav .list-group-item a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #dc3545;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+#nav .list-group-item a:hover:after {
+    transform: scaleX(1);
+}
+
+.nav__responive {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 2.6rem;
+    padding: 0 40px;
+    display: none;
+    /* color: var(--primary-color); */
+}
+
+.img__about-logo {
+    width: 110px;
+    border-radius: 50%;
+}
+
+
+/* Thể loại */
+
+.the-loai-title>h4 {
+    color: #53382c;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.the-loai-link {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.the-loai-link:hover .the-loai-img img {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.the-loai-link:hover {
+    color: #53382c;
+}
+
+.the-loai-img img {
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.the-loai-ten {
+    margin-top: 10px;
+}
+
+
+/* Cart modal */
+
+.modal-body {
+    padding-left: 0;
+    list-style: none;
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.cart-items-info {
+    width: 100%;
+}
+
+.cart-item-img img {
+    height: 50px;
+}
+
+.cart-item-name {
+    width: 100%;
+    height: 70px;
+    font-weight: 400;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.cart-item-price {
+    font-weight: 500;
+    width: 25%;
+}
+
+.cart-item-qty>input {
+    width: 40px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.cart-item-close i {
+    color: red;
+}
+
+.cart-total {
+    padding: 0 10px;
+}
+
+.cart-total-title {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-right: 12px;
+}
+
+.cart-total-price {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* Khám phá / Khuyen mai*/
+
+.thanh-vien>h4,
+.khuyen-mai-title>h4,
+.kham-pha-mon-title>h4 {
+    color: #53382c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.khuyen-mai-link,
+.kham-pha-mon-link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.kham-pha-mon-link:hover .card-img-top {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.khuyen-mai-link img,
+.kham-pha-mon-link img {
+    border-bottom: 4px solid #ccc;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.khuyen-mai-link .card-title,
+.kham-pha-mon-link .card-title {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000;
+    font-weight: bold;
+    height: 36px;
+}
+
+.khuyen-mai-link .card-text,
+.kham-pha-mon-link .card-text {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+button.btn-light {
+    width: 100%;
+    color: #000;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+button.btn:hover {
+    opacity: 0.8;
+    color: #000;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+}
+
+.khuyen-mai-footer,
+.kham-pha-mon-footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.khuyen-mai-all,
+.kham-pha-mon-all {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.khuyen-mai-all>i,
+.kham-pha-mon-all>i {
+    font-weight: bolder;
+}
+
+.kham-pha-mon-all:hover {
+    color: #000;
+    opacity: 0.8;
+}
+
+.khuyen-mai-all:hover {
+    color: #000;
+    opacity: 0.8;
+}
+
+.khuyen-mai-percent>i {
+    color: red;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.khuyen-mai-percent>span {
+    color: #1a202c;
+    font-weight: 400;
+}
+
+
+/* Thành viên */
+
+.thanh-vien-img {
+    background-image: url(/assets/img/banner/Thanh-vien.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #00000012;
+    display: flex;
+    overflow: hidden;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.linear-bg {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .7) 100%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 91%;
+    z-index: 0
+}
+
+.btn-banner {
+    position: relative;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+.thanh-vien-content {
+    flex: 1;
+}
+
+.thanh-vien-content h3 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 20px 0;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.thanh-vien-content p {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Footer */
+
+.download-app-sms>h4,
+.download-app>h4 {
+    color: #53382c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.download-app {
+    margin: auto;
+}
+
+.download-app img {
+    height: 48px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.footer {
+    margin-top: 40px;
+}
