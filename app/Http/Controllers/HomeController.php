@@ -402,7 +402,13 @@ class HomeController extends Controller
                                <i class="fa-solid fa-circle-xmark fw-border text-danger"></i>
                                <a style="color: #fff; text-decoration: none;" class="btn-delete-order text-danger fw-bold" data-id="' . $v_order_info->order_id . '" >Xoá Đơn</a>
                             </td>';
-                    }
+                    } else if ($v_order_info->order_status == 4) {
+                        $output .= ' <td class="align-middle text-info fw-bold">Đơn Đã Nhận</td>
+                        <td class="align-middle" style=" cursor: pointer;">
+                           <i class="fa-solid fa-circle-xmark fw-border text-danger"></i>
+                           <a style="color: #fff; text-decoration: none;" class="btn-delete-order text-danger fw-bold" data-id="' . $v_order_info->order_id . '" >Xoá Đơn</a>
+                        </td>';
+                    } 
                     $output .= '
                     </tr>';
                 }
@@ -457,7 +463,13 @@ class HomeController extends Controller
                                <i class="fa-solid fa-circle-xmark fw-border text-danger"></i>
                                <a style="color: #fff; text-decoration: none;" class="btn-delete-order text-danger fw-bold" data-id="' . $order_info_latest->order_id . '" >Xoá Đơn</a>
                             </td>';
-                    }
+                    } else if ($v_order_info->order_status == 4) {
+                        $output .= ' <td class="align-middle text-info fw-bold">Đơn Đã Nhận</td>
+                        <td class="align-middle" style=" cursor: pointer;">
+                           <i class="fa-solid fa-circle-xmark fw-border text-danger"></i>
+                           <a style="color: #fff; text-decoration: none;" class="btn-delete-order text-danger fw-bold" data-id="' . $v_order_info->order_id . '" >Xoá Đơn</a>
+                        </td>';
+                    } 
             return $output;
         }
     }

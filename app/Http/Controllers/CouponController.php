@@ -135,7 +135,7 @@ class CouponController extends Controller
                 $output .='
             </td>
             <td>';
-                if ($cou->coupon_start <= $today && $cou->coupon_end >= $today){
+                if ($cou->coupon_end >= $today){
                     $output .='
                         <b style="color: green">Còn Hạn</b>';
                     }else{

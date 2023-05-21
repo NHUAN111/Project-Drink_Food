@@ -436,7 +436,7 @@
     <script>
     $("#datepicker_start").datepicker({
         numberOfMonths: 1,
-        dateFormat: 'yy/m/dd',
+        dateFormat: 'yy/mm/dd',
         onSelect: function(selectdate) {
             var dt = new Date(selectdate);
             dt.setDate(dt.getDate() + 1)
@@ -446,7 +446,7 @@
   
     $("#datepicker_end").datepicker({
         numberOfMonths: 1,
-        dateFormat: 'yy/m/dd',
+        dateFormat: 'yy/mm/dd',
         onSelect: function(selectdate) {
             var dt = new Date(selectdate);
             dt.setDate(dt.getDate() - 1)

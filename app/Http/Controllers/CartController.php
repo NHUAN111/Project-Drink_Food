@@ -119,7 +119,7 @@ class CartController extends Controller
                         ' . number_format($total - $total_coupon, 0, ',', '.') . ' ' . 'đ' . '
                     </td>
                 </tr>';
-                    } elseif ($cou['coupon_condition'] == 2) {
+                    } else if ($cou['coupon_condition'] == 2) {
                         $output .= '
                     <td colspan="6">
                         <p style="border-style: dotted;" class="p-2 text-center">

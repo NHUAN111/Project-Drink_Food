@@ -90,6 +90,26 @@
             })
         });
 
+        $(document).on('click', '.update-status-success-order', function() {
+            var order_id = $(this).data('item_id');
+            var order_status = $(this).data('item_status');
+            $.ajax({
+                url: '{{ url('/admin/order/confirm-order-status') }}',
+                method: 'get',
+                data: {
+                    order_id: order_id,
+                    order_status: order_status,
+                },
+                success: function(data) {
+                    load_order();
+                    message_toastr("success", 'Duyệt đơn ' + order_id + ' thành công!');
+                },
+                error: function() {
+                    alert("Bug Huhu :<<");
+                }
+            })
+        });
+
         // Từ chối đơn
         $(document).on('click', '.cancel-order', function() {
             var order_id = $(this).data('item_id');

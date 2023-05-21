@@ -59,6 +59,9 @@ class OrderController extends Controller
         if($data['order_status'] == 0){
             $order = Order::where('order_id', $data['order_id'])->first();
             $order->update(['order_status' => 1]);
+        } else if ($data['order_status'] == 1){
+            $order = Order::where('order_id', $data['order_id'])->first();
+            $order->update(['order_status' => 4]);
         }
     }
 
@@ -77,6 +80,7 @@ class OrderController extends Controller
         // 1: Đơn đã duyệt
         // 2: Đơn đã bị Huỷ
         // 3: Đơn hàng bị từ chối
+        // 4: Đơn hàng giao thành công
         $output = '';
         $i = 0;
         $all_order = Order::orderBy('order_id', 'DESC')->paginate(10);
@@ -104,6 +108,9 @@ class OrderController extends Controller
             }else if($value_order->order_status == 3){
                 $output .= '
                     <td class="text-danger fw-bold"> Đơn Bị Từ Chối <span class="mdi mdi-calendar-remove" style="color: red; font-size: 22px;"></span>   </td>';
+            } else if($value_order->order_status == 4){
+                $output .= '
+                    <td class="text-success fw-bold"> Đơn Giao Thành Công <span class="mdi mdi-calendar-remove" style="color: green; font-size: 22px;"></span>   </td>';
             }
             if ($value_order->payment->payment_method == 1) {
                 $output .= '<td>Thanh toán khi nhận hàng</td>';
@@ -158,6 +165,11 @@ class OrderController extends Controller
                             <i class="mdi mdi-delete-sweep"></i>
                             Xóa đơn
                         </a>
+                        <br> <br>
+                        <a data-item_id = "' . $value_order->order_id . '" data-item_status="1" class="btn btn-gradient-success btn-success-order update-status-success-order">
+                          <i class="mdi mdi-checkbox-marked-circle"></i>
+                            Hoàn thành
+                        </a>
                     </div>';
             }else if($value_order->order_status == 2){
                 $output .= '
@@ -174,6 +186,20 @@ class OrderController extends Controller
                     </a>
                 </div>';
             } else if($value_order->order_status == 3){
+                $output .= '
+                <div>
+                    <a href="' . URL('/admin/order/view-order?order_code=' . $value_order->order_code) . '"
+                        class="btn btn-gradient-info">
+                        <i class="mdi mdi-eye"></i>
+                        Xem đơn
+                    </a>
+                    <br> <br>
+                    <a data-item_id = "' . $value_order->order_id . '" class="btn btn-gradient-danger btn-delete-order">
+                        <i class="mdi mdi-delete-sweep"></i>
+                        Xóa đơn
+                    </a>
+                </div>';
+            } else if ($value_order->order_status == 4){
                 $output .= '
                 <div>
                     <a href="' . URL('/admin/order/view-order?order_code=' . $value_order->order_code) . '"
